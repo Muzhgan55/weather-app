@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="search-bar" id="search-bar">
+        <input
+          type="text"
+          placeholder="Enter a city.."
+          id="search-bar-input"
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <hr />
+
+      <section class="weather-today">
+        <div class="today-info">
+          <h1 class="weather-app" id="city"></h1>
+          <p>
+            <span id="time"></span>, <span id="description"></span> <br />
+            Humidity: <strong id="humidity"></strong>, Wind:
+            <strong id="wind-speed"></strong>
+          </p>
+        </div>
+
+        <div class="today-temp">
+          <div id="icon"></div>
+
+          <span class="temp" id="temperature"></span
+          ><span class="unit">°C</span>
+        </div>
+      </section>
+
+      <hr />
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Muzhgan55/" target="_blank"
+          >Muzhgan Rahimi</a
+        >, is
+        <a href="https://github.com/Muzhgan55/weather-app" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://www.netlify.com" target="_blank">hosted on Netlify</a>.
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+body {
+  background: #eee5e5;
+  font-family: Arial, sans-serif;
+  padding: 40px 0;
+}
+
+.container {
+  width: 700px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 18px 35px;
+  border-radius: 10px;
+  border: none;
+  background: hsl(347, 76%, 46%);
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: hsl(347, 76%, 46%);
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.weather-today {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.today-info h1 {
+  font-size: 42px;
+  margin: 0;
+  color: #2f234f;
+}
+
+.today-info p {
+  margin: 6px 0;
+  color: #5d5570;
+  line-height: 1.6;
+}
+
+.today-temp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-icon {
+  width: 60px;
+}
+
+.temp {
+  font-size: 70px;
+  color: #2f234f;
+  font-weight: bold;
+}
+
+.unit {
+  font-size: 28px;
+  color: #2f234f;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+footer a {
+  color: hsl(347, 76%, 46%);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
